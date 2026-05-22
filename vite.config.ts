@@ -19,8 +19,8 @@ export default defineConfig({
         background_color: '#0f3d22',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/halisaha/',
-        start_url: '/halisaha/',
+        scope: '/squad-manager/',
+        start_url: '/squad-manager/',
         lang: 'tr',
         categories: ['sports', 'utilities'],
         icons: [
@@ -46,12 +46,12 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
-        navigateFallback: '/halisaha/index.html',
-        navigateFallbackDenylist: [/^\/halisaha\/api/],
+        navigateFallback: '/squad-manager/index.html',
+        navigateFallbackDenylist: [/^\/squad-manager\/api/],
       },
     }),
   ],
-  base: '/halisaha/',
+  base: '/squad-manager/',
   optimizeDeps: {
     include: ['html2canvas-pro'],
   },
