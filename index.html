@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#070b10" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kadro" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Kadro — Halısaha takım formasyonu oluştur ve kadro fotoğrafı indir" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+    <title>Kadro — Halısaha Kadro Oluşturucu</title>
+  </head>
+  <body>
+    <script>
+      ;(function (location) {
+        if (location.search.startsWith('?p=')) {
+          var path = decodeURIComponent(location.search.slice(3))
+          window.history.replaceState(null, '', location.pathname + path)
+        }
+      })(window.location)
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kadro</title>
+    <script>
+      ;(function () {
+        var base = '/halisaha/'
+        var path = location.pathname.replace(base, '/')
+        var search = location.search
+        var hash = location.hash
+        location.replace(base + '?p=' + encodeURIComponent(path + search + hash))
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>
